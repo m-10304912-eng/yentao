@@ -68,7 +68,9 @@ try {
     }
 
     echo "<hr><h3>🎉 Selesai! Pangkalan data telah dibaiki.</h3>";
-    echo "<a href='admin_manage.php'>&rarr; Kembali ke Urus Data</a>";
+    echo "<h1 class='text-2xl font-bold text-[#d4af37] mb-4'>Persediaan Jadual Pangkalan Data</h1>";
+    echo "<span class='text-xs font-bold text-slate-500 uppercase mb-4 block'>Sistem Pengundian Jawatankuasa Lembaga Pustakawan</span>";
+    echo "<a href='admin_manage.php' class='text-neon-blue underline'>&rarr; Kembali ke Urusan Pentadbir</a>";
 
 } catch (PDOException $e) {
     echo "<h1>❌ Ralat Kritikal</h1>";

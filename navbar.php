@@ -1,12 +1,14 @@
 <nav class="border-b border-white/10 bg-background-night/80 backdrop-blur-md sticky top-0 z-50">
+    <!-- Ensure Material Symbols font is loaded -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;FILL@0..1&display=swap" rel="stylesheet" />
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 border border-neon-blue/50 rounded flex items-center justify-center shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+            <div class="w-10 h-10 border border-neon-blue/50 rounded flex items-center justify-center shadow-[0_0_10px_rgba(0,243,255,0.2)] bg-[#0a0e17]">
                 <span class="material-symbols-outlined text-neon-blue text-xl">menu_book</span>
             </div>
-            <a href="index.php" class="text-xl font-black tracking-tighter text-white uppercase italic hover:text-neon-blue transition-colors">
-                Siber<span class="text-neon-blue">Pustaka</span>
+            <a href="results.php" class="text-xl font-black tracking-tighter text-white uppercase italic hover:text-neon-blue transition-colors">
+                Sistem <span class="text-neon-blue">Pengundian</span>
             </a>
         </div>
 
@@ -16,6 +18,7 @@
             <a href="results.php" class="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Keputusan</a>
             <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
                 <a href="admin_manage.php" class="text-xs font-bold uppercase tracking-widest text-neon-gold hover:text-white transition-colors">Admin</a>
+                <a href="results.php" class="text-xs font-bold uppercase tracking-widest text-neon-blue hover:text-white transition-colors">Laman Pengguna</a>
             <?php endif; ?>
         </div>
 

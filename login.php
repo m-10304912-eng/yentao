@@ -87,7 +87,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <header class="flex items-center justify-between px-8 py-6">
         <div class="flex items-center gap-3">
             <div class="w-12 h-12 border-2 border-cyber-gold rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(255,204,0,0.3)]">
-                <span class="material-symbols-outlined text-cyber-gold text-2xl font-bold neon-glow-gold">menu_book</span>
+                <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;FILL@0..1&display=swap" rel="stylesheet" />
+                <span class="material-symbols-outlined text-neon-blue text-2xl font-bold">menu_book</span>
             </div>
             <span class="text-2xl font-black tracking-tighter text-white uppercase italic">Siber<span class="text-cyber-blue neon-glow-text">Pustaka</span></span>
         </div>

@@ -52,7 +52,15 @@ $positions = $pdo->query("SELECT * FROM JAWATAN ORDER BY id_jawatan")->fetchAll(
 </head>
 <body class="bg-[#0a0e17] text-white">
 
+
 <?php include 'navbar.php'; ?>
+
+<main class="max-w-5xl mx-auto p-6">
+    <header class="mb-10 border-b border-white/10 pb-6">
+        <h1 class="text-3xl font-bold text-[#d4af37]">Undian Jawatankuasa</h1>
+        <span class="text-xs font-bold text-slate-500 uppercase">Sistem Pengundian Jawatankuasa Lembaga Pustakawan</span>
+    </header>
+</main>
 
 <main class="max-w-7xl mx-auto p-6">
     <h1 class="text-3xl font-bold mb-2 text-[#d4af37]">Portal Undian</h1>

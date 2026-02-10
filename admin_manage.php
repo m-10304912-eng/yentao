@@ -172,6 +172,10 @@ $positions = $pdo->query("SELECT * FROM JAWATAN ORDER BY id_jawatan")->fetchAll(
                 </div>
             </div>
             <nav class="flex flex-col gap-2">
+                <a href="admin_dashboard.php" class="flex items-center gap-3 px-4 py-3 rounded-md text-gray-500 hover:text-neon-blue hover:bg-white/5 transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <p class="text-sm font-medium tracking-wide uppercase">Papan Pemuka</p>
+                </a>
                 <div class="flex items-center gap-3 px-4 py-3 rounded-md bg-white/5 border-l-2 border-neon-blue cursor-pointer group">
                     <span class="material-symbols-outlined text-neon-blue">dashboard</span>
                     <p class="text-sm font-bold tracking-wide uppercase text-neon-blue">Pengurusan Data</p>
@@ -191,9 +195,14 @@ $positions = $pdo->query("SELECT * FROM JAWATAN ORDER BY id_jawatan")->fetchAll(
         <div class="max-w-6xl mx-auto space-y-12">
             
             <!-- Header -->
-            <div class="flex items-end justify-between">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between border-b border-white/10 pb-6 mb-8">
                 <div>
-                    <h2 class="text-white text-4xl font-black tracking-tighter uppercase italic">Terminal Pengurusan</h2>
+                    <h2 class="text-[#d4af37] text-3xl font-bold tracking-tighter uppercase">Urusan Pentadbir</h2>
+                    <span class="text-xs font-bold text-slate-500 uppercase">Sistem Pengundian Jawatankuasa Lembaga Pustakawan</span>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="results.php" class="px-4 py-2 border border-neon-blue text-neon-blue text-xs font-bold uppercase tracking-widest rounded hover:bg-neon-blue hover:text-black transition-all">Laman Pengguna</a>
+                </div>
                     <div class="flex items-center gap-2 mt-2 font-mono text-xs text-neon-blue/70">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-blue opacity-75"></span>
